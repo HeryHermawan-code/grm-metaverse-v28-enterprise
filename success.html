@@ -1,0 +1,33 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PAYMENT SUCCESS - PT GREEN</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>body{background:linear-gradient(135deg,#020a05,#0a2a15);color:#e0ffe0;font-family:Arial;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:15px}.card{background:#0a1a0f;border:2px solid #00ffaa;border-radius:16px;padding:24px;max-width:480px;width:100%;box-shadow:0 0 30px #00ffaa33;text-align:center}</style>
+</head><body>
+<div class="card">
+<div style="font-size:50px">✅</div>
+<h1 style="color:#00ffaa;font-size:22px;margin:10px 0">PAYMENT SUCCESSFUL!</h1>
+<p style="font-size:12px;opacity:.8">PT GREEN RESOURCES METAVERSE V30.0</p>
+
+<div style="background:#003300;border-radius:10px;padding:12px;margin:15px 0;text-align:left;font-size:11px">
+<p><b>Invoice:</b> GRM-2026-<span id="inv"></span></p>
+<p><b>Amount:</b> $7,500 / IDR 119.250.000</p>
+<p><b>Product:</b> Enterprise Financial Ledger V30.0 + PSAK 100% + EV/EBITDA 15.1x</p>
+<p><b>Status:</b> <span style="color:#00ffaa">● PAID - SETTLEMENT T+2 BRI 015901054376505</span></p>
+<p><b>Buyer:</b> <span id="email">customer@enterprise.com</span></p>
+</div>
+
+<a id="dlBtn" href="#" style="background:linear-gradient(90deg,#00ffaa,#00cc88);color:#000;padding:14px 20px;border-radius:10px;text-decoration:none;display:block;font-weight:bold;margin:10px 0">📘 DOWNLOAD EBOOK V30.0 (PDF 42 PAGES)</a>
+<a href="https://wa.me/6281234567890?text=Halo%20PT%20GREEN%20Invoice%20GRM-2026%20sudah%20bayar%20$7500" style="background:#25D366;color:#fff;padding:12px 20px;border-radius:10px;text-decoration:none;display:block;font-weight:bold">💬 CONFIRM VIA WHATSAPP</a>
+
+<p style="font-size:10px;margin-top:15px;opacity:.6">File akan otomatis terkirim ke email. Settlement T+2 ke BRI. Simpan Invoice ini.<br><br><a href="admin.html" style="color:#00ffaa">→ Lihat di Admin Dashboard</a> | <a href="index.html" style="color:#00ffaa">← Back to Home</a></p>
+</div>
+
+<script>
+document.getElementById('inv').innerText = Math.floor(Math.random()*900000+100000);
+let params = new URLSearchParams(location.search);
+document.getElementById('email').innerText = params.get('email') || 'customer@enterprise.com';
+// GANTI LINK EBOOK REAL BAPAK DI BAWAH INI NANTI
+document.getElementById('dlBtn').href = "https://drive.google.com/file/d/CONTOH_LINK_EBOOK_BAPAK/view";
+// Setelah ganti, file langsung download
+</script>
+</body></html>
